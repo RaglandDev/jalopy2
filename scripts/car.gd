@@ -43,7 +43,6 @@ func entering_car():
 		$camera_car.make_current()
 		active = true
 func leaving_car():
-	print("leaving")
 	var vehicle = $"."
 	var hidden_player = get_parent().get_node("player")
 	var newLoc = vehicle.global_transform.origin - 2 * vehicle.global_transform.basis.x

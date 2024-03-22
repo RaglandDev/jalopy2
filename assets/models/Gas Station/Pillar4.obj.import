@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://dy2q6jfnekhmo"
-path="res://.godot/imported/Pillar4.obj-4b6daadcb58badca77d8beabcab2dbf7.mesh"
+path="res://.godot/imported/Pillar4.obj-488d24f7fc2f9b688e5903407e6592d3.mesh"
 
 [deps]
 
-files=["res://.godot/imported/Pillar4.obj-4b6daadcb58badca77d8beabcab2dbf7.mesh"]
+files=["res://.godot/imported/Pillar4.obj-488d24f7fc2f9b688e5903407e6592d3.mesh"]
 
-source_file="res://Gas Station/Pillar4.obj"
-dest_files=["res://.godot/imported/Pillar4.obj-4b6daadcb58badca77d8beabcab2dbf7.mesh", "res://.godot/imported/Pillar4.obj-4b6daadcb58badca77d8beabcab2dbf7.mesh"]
+source_file="res://assets/models/Gas Station/Pillar4.obj"
+dest_files=["res://.godot/imported/Pillar4.obj-488d24f7fc2f9b688e5903407e6592d3.mesh", "res://.godot/imported/Pillar4.obj-488d24f7fc2f9b688e5903407e6592d3.mesh"]
 
 [params]
 

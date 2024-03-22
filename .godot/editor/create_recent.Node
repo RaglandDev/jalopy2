@@ -1,3 +1,10 @@
+AudioStreamPlayer
+Button
+CenterContainer
+VBoxContainer
+HBoxContainer
+TextureRect
+MarginContainer
 Camera3D
 CollisionShape3D
 Area3D

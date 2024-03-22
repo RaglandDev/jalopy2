@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://pq0pkjydwinx"
-path="res://.godot/imported/Pillarstone4.obj-bfda7e229e523d9aeea0ba132eb124ec.mesh"
+path="res://.godot/imported/Pillarstone4.obj-4517ba1f683460f78e67b01141d5563d.mesh"
 
 [deps]
 
-files=["res://.godot/imported/Pillarstone4.obj-bfda7e229e523d9aeea0ba132eb124ec.mesh"]
+files=["res://.godot/imported/Pillarstone4.obj-4517ba1f683460f78e67b01141d5563d.mesh"]
 
-source_file="res://Gas Station/Pillarstone4.obj"
-dest_files=["res://.godot/imported/Pillarstone4.obj-bfda7e229e523d9aeea0ba132eb124ec.mesh", "res://.godot/imported/Pillarstone4.obj-bfda7e229e523d9aeea0ba132eb124ec.mesh"]
+source_file="res://assets/models/Gas Station/Pillarstone4.obj"
+dest_files=["res://.godot/imported/Pillarstone4.obj-4517ba1f683460f78e67b01141d5563d.mesh", "res://.godot/imported/Pillarstone4.obj-4517ba1f683460f78e67b01141d5563d.mesh"]
 
 [params]
 

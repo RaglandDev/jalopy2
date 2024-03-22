@@ -1,32 +1,37 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1711146580
-Buick Reatta.glb::PackedScene::545629500595347497::1711145937::1711146730::1::::<><>::
-icon.svg::CompressedTexture2D::8415602555851118667::1711064361::1711068092::1::::<><>::
-Player.gd::GDScript::-1::1711077445::0::1::::<>CharacterBody3D<>::
+::res://::1711150481
 README.md::TextFile::-1::1711067918::0::1::::<><>::
-car.gd::GDScript::-1::1711077592::0::1::::<>VehicleBody3D<>::
-::res://addons/::1711070595
-::res://addons/godot-git-plugin/::1711146660
-::res://addons/godot-git-plugin/win64/::1711146660
-::res://assets/::1711146530
-::res://assets/audio/::1711146062
-main_menu_theme.mp3::AudioStreamMP3::6105928915678757929::1711145937::1711146727::1::::<><>::
+MainMenu.gd::GDScript::-1::1711150481::0::1::::<>Control<>::
+::res://assets/::1711148929
+graphic.png::CompressedTexture2D::4481527421759235694::1711148910::1711148929::1::::<><>::
+icon.svg::CompressedTexture2D::8415602555851118667::1711064361::1711147229::1::::<><>::
+new_game.png::CompressedTexture2D::936088710058785552::1711148713::1711148719::1::::<><>::
+title.png::CompressedTexture2D::8986220434652744770::1711148543::1711148719::1::::<><>::
+verison.png::CompressedTexture2D::8614288549283882704::1711148816::1711148929::1::::<><>::
+::res://assets/audio/::1711146727
+main_menu_theme.mp3::AudioStreamMP3::6105928915678757929::1711145937::1711150640::1::::<><>::
 ::res://assets/materials/::1711146543
-::res://Gas Station/::1711145937
-Close Grass.obj::Mesh::1769088746406533347::1711145937::1711146728::1::::<><>::
-Cup1.obj::Mesh::6031458396776249072::1711145937::1711146728::1::::<><>::
-cup2.obj::Mesh::4145604180733862735::1711145937::1711146728::1::::<><>::
-Icebox.obj::Mesh::6349003590082539064::1711145937::1711146728::1::::<><>::
-Lamps.obj::Mesh::3896642528786922345::1711145937::1711146728::1::::<><>::
-Pillar1.obj::Mesh::2527549544554593901::1711145937::1711146728::1::::<><>::
-Pillar2.obj::Mesh::5319997902297095538::1711145937::1711146728::1::::<><>::
-Pillar4.obj::Mesh::8900559810277590322::1711145937::1711146728::1::::<><>::
-Pillarstone1.obj::Mesh::3985404277107714951::1711145937::1711146728::1::::<><>::
-Pillarstone2.obj::Mesh::6599197576350847334::1711145937::1711146728::1::::<><>::
-Pillarstone4.obj::Mesh::1087407950595251985::1711145937::1711146729::1::::<><>::
-Road.obj::Mesh::5642930213877848963::1711145937::1711146729::1::::<><>::
-Station.obj::Mesh::8050352165118136511::1711145937::1711146729::1::::<><>::
-Storepillars.obj::Mesh::507158184930766501::1711145937::1711146729::1::::<><>::
-::res://scenes/::1711146580
-Car.tscn::PackedScene::8635160226748686575::1711145937::0::1::::<><>::uid://cq20nve2we1di::::res://Buick Reatta.glb
-garage.tscn::PackedScene::2588228789107480695::1711145937::0::1::::<><>::res://Player.gd<>res://car.gd<>uid://dmxwehlicdmtr::::res://Gas Station/Station.obj<>uid://hhw26k2imijt::::res://Gas Station/Storepillars.obj<>uid://cmnqiba3bcsxn::::res://Gas Station/Road.obj<>uid://cwprfqyxgf6cq::::res://Gas Station/Icebox.obj<>uid://cr6xid2pqcmtk::::res://Gas Station/Cup1.obj<>uid://b0cfq3on71jnb::::res://Gas Station/cup2.obj<>uid://bvrter6be7m2d::::res://Gas Station/Lamps.obj<>uid://0g7vr70sfe00::::res://Gas Station/Close Grass.obj<>uid://bcammvyb0wdwv::::res://Gas Station/Pillar1.obj<>uid://ch2bt87gxlom1::::res://Gas Station/Pillar2.obj<>uid://dy2q6jfnekhmo::::res://Gas Station/Pillar4.obj<>uid://c1ax243o4fp4y::::res://Gas Station/Pillarstone2.obj<>uid://pq0pkjydwinx::::res://Gas Station/Pillarstone4.obj
+::res://assets/models/::1711147230
+Buick Reatta.glb::PackedScene::545629500595347497::1711145937::1711147230::1::::<><>::
+::res://assets/models/Gas Station/::1711147230
+Close Grass.obj::Mesh::1769088746406533347::1711145937::1711147229::1::::<><>::
+Cup1.obj::Mesh::6031458396776249072::1711145937::1711147229::1::::<><>::
+cup2.obj::Mesh::4145604180733862735::1711145937::1711147229::1::::<><>::
+Icebox.obj::Mesh::6349003590082539064::1711145937::1711147229::1::::<><>::
+Lamps.obj::Mesh::3896642528786922345::1711145937::1711147230::1::::<><>::
+Pillar1.obj::Mesh::2527549544554593901::1711145937::1711147230::1::::<><>::
+Pillar2.obj::Mesh::5319997902297095538::1711145937::1711147230::1::::<><>::
+Pillar4.obj::Mesh::8900559810277590322::1711145937::1711147230::1::::<><>::
+Pillarstone1.obj::Mesh::3985404277107714951::1711145937::1711147230::1::::<><>::
+Pillarstone2.obj::Mesh::6599197576350847334::1711145937::1711147230::1::::<><>::
+Pillarstone4.obj::Mesh::1087407950595251985::1711145937::1711147230::1::::<><>::
+Road.obj::Mesh::5642930213877848963::1711145937::1711147230::1::::<><>::
+Station.obj::Mesh::8050352165118136511::1711145937::1711147230::1::::<><>::
+Storepillars.obj::Mesh::507158184930766501::1711145937::1711147230::1::::<><>::
+::res://scenes/::1711150558
+Car.tscn::PackedScene::8635160226748686575::1711149608::0::1::::<><>::uid://h1ko5rlooex2::::res://assets/models/Buick Reatta.glb
+garage.tscn::PackedScene::2588228789107480695::1711147479::0::1::::<><>::res://scripts/Player.gd<>res://scripts/car.gd<>uid://dmxwehlicdmtr::::res://assets/models/Gas Station/Station.obj<>uid://hhw26k2imijt::::res://assets/models/Gas Station/Storepillars.obj<>uid://cmnqiba3bcsxn::::res://assets/models/Gas Station/Road.obj<>uid://cwprfqyxgf6cq::::res://assets/models/Gas Station/Icebox.obj<>uid://cr6xid2pqcmtk::::res://assets/models/Gas Station/Cup1.obj<>uid://b0cfq3on71jnb::::res://assets/models/Gas Station/cup2.obj<>uid://bvrter6be7m2d::::res://assets/models/Gas Station/Lamps.obj<>uid://0g7vr70sfe00::::res://assets/models/Gas Station/Close Grass.obj<>uid://bcammvyb0wdwv::::res://assets/models/Gas Station/Pillar1.obj<>uid://ch2bt87gxlom1::::res://assets/models/Gas Station/Pillar2.obj<>uid://dy2q6jfnekhmo::::res://assets/models/Gas Station/Pillar4.obj<>uid://c1ax243o4fp4y::::res://assets/models/Gas Station/Pillarstone2.obj<>uid://pq0pkjydwinx::::res://assets/models/Gas Station/Pillarstone4.obj
+main_menu.tscn::PackedScene::1817222837489534711::1711150558::0::1::::<><>::res://MainMenu.gd
+::res://scripts/::1711147475
+car.gd::GDScript::-1::1711147475::0::1::::<>VehicleBody3D<>::
+Player.gd::GDScript::-1::1711077445::0::1::::<>CharacterBody3D<>::

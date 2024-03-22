@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://h1ko5rlooex2"
-path="res://.godot/imported/Buick Reatta.glb-2d2a34a7d10bca9862e0ebb030895d05.scn"
+path="res://.godot/imported/Buick Reatta.glb-fca9b7b04e480fab41cb1b14f5c77451.scn"
 
 [deps]
 
-source_file="res://Buick Reatta.glb"
-dest_files=["res://.godot/imported/Buick Reatta.glb-2d2a34a7d10bca9862e0ebb030895d05.scn"]
+source_file="res://assets/models/Buick Reatta.glb"
+dest_files=["res://.godot/imported/Buick Reatta.glb-fca9b7b04e480fab41cb1b14f5c77451.scn"]
 
 [params]
 

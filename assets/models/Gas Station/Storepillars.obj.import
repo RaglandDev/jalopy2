@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://hhw26k2imijt"
-path="res://.godot/imported/Storepillars.obj-ba755def706e0b50f32a972cfffc9d40.mesh"
+path="res://.godot/imported/Storepillars.obj-8c24c0cf12bc7d57c3df2f37bf71530f.mesh"
 
 [deps]
 
-files=["res://.godot/imported/Storepillars.obj-ba755def706e0b50f32a972cfffc9d40.mesh"]
+files=["res://.godot/imported/Storepillars.obj-8c24c0cf12bc7d57c3df2f37bf71530f.mesh"]
 
-source_file="res://Gas Station/Storepillars.obj"
-dest_files=["res://.godot/imported/Storepillars.obj-ba755def706e0b50f32a972cfffc9d40.mesh", "res://.godot/imported/Storepillars.obj-ba755def706e0b50f32a972cfffc9d40.mesh"]
+source_file="res://assets/models/Gas Station/Storepillars.obj"
+dest_files=["res://.godot/imported/Storepillars.obj-8c24c0cf12bc7d57c3df2f37bf71530f.mesh", "res://.godot/imported/Storepillars.obj-8c24c0cf12bc7d57c3df2f37bf71530f.mesh"]
 
 [params]
 

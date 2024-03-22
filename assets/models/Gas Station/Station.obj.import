@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://dmxwehlicdmtr"
-path="res://.godot/imported/Station.obj-412fc0541d9180fc76f4eb5524cb895d.mesh"
+path="res://.godot/imported/Station.obj-8cbf5b11783abea1f24b6dd41dd2996d.mesh"
 
 [deps]
 
-files=["res://.godot/imported/Station.obj-412fc0541d9180fc76f4eb5524cb895d.mesh"]
+files=["res://.godot/imported/Station.obj-8cbf5b11783abea1f24b6dd41dd2996d.mesh"]
 
-source_file="res://Gas Station/Station.obj"
-dest_files=["res://.godot/imported/Station.obj-412fc0541d9180fc76f4eb5524cb895d.mesh", "res://.godot/imported/Station.obj-412fc0541d9180fc76f4eb5524cb895d.mesh"]
+source_file="res://assets/models/Gas Station/Station.obj"
+dest_files=["res://.godot/imported/Station.obj-8cbf5b11783abea1f24b6dd41dd2996d.mesh", "res://.godot/imported/Station.obj-8cbf5b11783abea1f24b6dd41dd2996d.mesh"]
 
 [params]
 

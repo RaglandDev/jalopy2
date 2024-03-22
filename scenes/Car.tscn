@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dva63enb8fot0"]
 
-[ext_resource type="PackedScene" uid="uid://cq20nve2we1di" path="res://Buick Reatta.glb" id="1_otjxf"]
+[ext_resource type="PackedScene" uid="uid://h1ko5rlooex2" path="res://assets/models/Buick Reatta.glb" id="1_otjxf"]
 
 [node name="Buick Reatta" instance=ExtResource("1_otjxf")]
 

@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://0g7vr70sfe00"
-path="res://.godot/imported/Close Grass.obj-b37e0dee3e843b3bfdd65e07a9c68ef7.mesh"
+path="res://.godot/imported/Close Grass.obj-55bfabd9807a93cefcddbc89034a9690.mesh"
 
 [deps]
 
-files=["res://.godot/imported/Close Grass.obj-b37e0dee3e843b3bfdd65e07a9c68ef7.mesh"]
+files=["res://.godot/imported/Close Grass.obj-55bfabd9807a93cefcddbc89034a9690.mesh"]
 
-source_file="res://Gas Station/Close Grass.obj"
-dest_files=["res://.godot/imported/Close Grass.obj-b37e0dee3e843b3bfdd65e07a9c68ef7.mesh", "res://.godot/imported/Close Grass.obj-b37e0dee3e843b3bfdd65e07a9c68ef7.mesh"]
+source_file="res://assets/models/Gas Station/Close Grass.obj"
+dest_files=["res://.godot/imported/Close Grass.obj-55bfabd9807a93cefcddbc89034a9690.mesh", "res://.godot/imported/Close Grass.obj-55bfabd9807a93cefcddbc89034a9690.mesh"]
 
 [params]
 

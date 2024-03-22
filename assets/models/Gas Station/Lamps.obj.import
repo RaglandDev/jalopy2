@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://bvrter6be7m2d"
-path="res://.godot/imported/Lamps.obj-3e0d85ef144175809d9b05aaac0478db.mesh"
+path="res://.godot/imported/Lamps.obj-45998a9b5f77be77d926bd1a89877a20.mesh"
 
 [deps]
 
-files=["res://.godot/imported/Lamps.obj-3e0d85ef144175809d9b05aaac0478db.mesh"]
+files=["res://.godot/imported/Lamps.obj-45998a9b5f77be77d926bd1a89877a20.mesh"]
 
-source_file="res://Gas Station/Lamps.obj"
-dest_files=["res://.godot/imported/Lamps.obj-3e0d85ef144175809d9b05aaac0478db.mesh", "res://.godot/imported/Lamps.obj-3e0d85ef144175809d9b05aaac0478db.mesh"]
+source_file="res://assets/models/Gas Station/Lamps.obj"
+dest_files=["res://.godot/imported/Lamps.obj-45998a9b5f77be77d926bd1a89877a20.mesh", "res://.godot/imported/Lamps.obj-45998a9b5f77be77d926bd1a89877a20.mesh"]
 
 [params]
 

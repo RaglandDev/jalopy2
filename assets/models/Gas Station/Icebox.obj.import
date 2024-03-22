@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://cwprfqyxgf6cq"
-path="res://.godot/imported/Icebox.obj-b5629aa6dae8b333267575bc872aae94.mesh"
+path="res://.godot/imported/Icebox.obj-e6f1e4d7cd1d8531286aca00f4fa9d39.mesh"
 
 [deps]
 
-files=["res://.godot/imported/Icebox.obj-b5629aa6dae8b333267575bc872aae94.mesh"]
+files=["res://.godot/imported/Icebox.obj-e6f1e4d7cd1d8531286aca00f4fa9d39.mesh"]
 
-source_file="res://Gas Station/Icebox.obj"
-dest_files=["res://.godot/imported/Icebox.obj-b5629aa6dae8b333267575bc872aae94.mesh", "res://.godot/imported/Icebox.obj-b5629aa6dae8b333267575bc872aae94.mesh"]
+source_file="res://assets/models/Gas Station/Icebox.obj"
+dest_files=["res://.godot/imported/Icebox.obj-e6f1e4d7cd1d8531286aca00f4fa9d39.mesh", "res://.godot/imported/Icebox.obj-e6f1e4d7cd1d8531286aca00f4fa9d39.mesh"]
 
 [params]
 

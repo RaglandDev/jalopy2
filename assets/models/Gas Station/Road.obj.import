@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://cmnqiba3bcsxn"
-path="res://.godot/imported/Road.obj-9e10b3b55491b869c79d548285ae245d.mesh"
+path="res://.godot/imported/Road.obj-472ba99a80599b637a589a02c3a57c21.mesh"
 
 [deps]
 
-files=["res://.godot/imported/Road.obj-9e10b3b55491b869c79d548285ae245d.mesh"]
+files=["res://.godot/imported/Road.obj-472ba99a80599b637a589a02c3a57c21.mesh"]
 
-source_file="res://Gas Station/Road.obj"
-dest_files=["res://.godot/imported/Road.obj-9e10b3b55491b869c79d548285ae245d.mesh", "res://.godot/imported/Road.obj-9e10b3b55491b869c79d548285ae245d.mesh"]
+source_file="res://assets/models/Gas Station/Road.obj"
+dest_files=["res://.godot/imported/Road.obj-472ba99a80599b637a589a02c3a57c21.mesh", "res://.godot/imported/Road.obj-472ba99a80599b637a589a02c3a57c21.mesh"]
 
 [params]
 
