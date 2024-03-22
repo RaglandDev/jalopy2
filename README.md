@@ -1,2 +1,1 @@
-# jalopy2
-## Jalopy remade using godot
+# jalopy2 remake using godot
