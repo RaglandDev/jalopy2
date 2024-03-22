@@ -1,0 +1,5 @@
+CollisionShape3D
+MeshInstance3D
+VehicleWheel3D
+VehicleBody3D
+StaticBody3D
