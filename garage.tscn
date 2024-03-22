@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://bc400raps7bsp"]
+[gd_scene load_steps=15 format=3 uid="uid://bc400raps7bsp"]
 
 [ext_resource type="Script" path="res://Player.gd" id="1_3ypwe"]
 [ext_resource type="Script" path="res://car.gd" id="2_vdpya"]
@@ -43,6 +43,8 @@ bottom_radius = 0.4
 height = 0.25
 radial_segments = 12
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_og5c7"]
+
 [node name="Node3D" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -52,31 +54,31 @@ environment = SubResource("Environment_0d32n")
 transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
 shadow_enabled = true
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+[node name="floor" type="MeshInstance3D" parent="."]
 transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 0, 0, 0)
 mesh = SubResource("PlaneMesh_nlvcn")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
+[node name="StaticBody3D" type="StaticBody3D" parent="floor"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floor/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_stvj3")
 
-[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+[node name="player" type="CharacterBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.74784, 0, -4.64164)
 script = ExtResource("1_3ypwe")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="player"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.20202, 0)
 mesh = SubResource("CapsuleMesh_i7bdm")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="player"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.20202, 0)
 shape = SubResource("ConvexPolygonShape3D_4sdf8")
 
-[node name="Neck" type="Node3D" parent="CharacterBody3D"]
+[node name="Neck" type="Node3D" parent="player"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.82834, 0)
 
-[node name="Camera3D" type="Camera3D" parent="CharacterBody3D/Neck"]
+[node name="camera_player" type="Camera3D" parent="player/Neck"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.214159, 0)
 
 [node name="car" type="VehicleBody3D" parent="."]
@@ -90,32 +92,20 @@ mesh = SubResource("BoxMesh_gf3hy")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 1, 2)
 shape = SubResource("ConvexPolygonShape3D_ctjjo")
 
-[node name="wheel_front_left" type="VehicleWheel3D" parent="car"]
+[node name="wheel_back_right" type="VehicleWheel3D" parent="car"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.63619, 0.969084, 0.106959)
-use_as_steering = true
+use_as_traction = true
 wheel_radius = 0.4
 suspension_stiffness = 50.0
 damping_compression = 1.9
 damping_relaxation = 2.0
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="car/wheel_front_left"]
-transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0)
-mesh = SubResource("CylinderMesh_xr2fn")
-
-[node name="wheel_front_right" type="VehicleWheel3D" parent="car"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.38786, 0.969084, 0.106959)
-use_as_steering = true
-wheel_radius = 0.4
-suspension_stiffness = 50.0
-damping_compression = 1.9
-damping_relaxation = 2.0
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="car/wheel_front_right"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="car/wheel_back_right"]
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0)
 mesh = SubResource("CylinderMesh_xr2fn")
 
 [node name="wheel_back_left" type="VehicleWheel3D" parent="car"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.63619, 0.969084, 3.75056)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.38786, 0.969084, 0.106959)
 use_as_traction = true
 wheel_radius = 0.4
 suspension_stiffness = 50.0
@@ -126,14 +116,37 @@ damping_relaxation = 2.0
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0)
 mesh = SubResource("CylinderMesh_xr2fn")
 
-[node name="wheel_back_right" type="VehicleWheel3D" parent="car"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.38786, 0.969084, 3.75056)
-use_as_traction = true
+[node name="wheel_front_right" type="VehicleWheel3D" parent="car"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.63619, 0.969084, 3.75056)
+use_as_steering = true
 wheel_radius = 0.4
 suspension_stiffness = 50.0
 damping_compression = 1.9
 damping_relaxation = 2.0
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="car/wheel_back_right"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="car/wheel_front_right"]
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0)
 mesh = SubResource("CylinderMesh_xr2fn")
+
+[node name="wheel_front_left" type="VehicleWheel3D" parent="car"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.38786, 0.969084, 3.75056)
+use_as_steering = true
+wheel_radius = 0.4
+suspension_stiffness = 50.0
+damping_compression = 1.9
+damping_relaxation = 2.0
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="car/wheel_front_left"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("CylinderMesh_xr2fn")
+
+[node name="player_detect" type="Area3D" parent="car"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="car/player_detect"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.18624, 1.11696, 1.92825)
+shape = SubResource("BoxShape3D_og5c7")
+
+[node name="camera_car" type="Camera3D" parent="car"]
+transform = Transform3D(-1, -4.37114e-08, 7.57103e-08, 0, 0.866025, 0.5, -8.74228e-08, 0.5, -0.866025, 3.94557, 5.15014, -2.56856)
+
+[connection signal="body_entered" from="car/player_detect" to="car" method="_on_player_detect_body_entered"]

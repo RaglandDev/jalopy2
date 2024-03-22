@@ -1,4 +1,6 @@
+Camera3D
 CollisionShape3D
+Area3D
 MeshInstance3D
 VehicleWheel3D
 VehicleBody3D
