@@ -1,11 +1,27 @@
-[gd_scene load_steps=15 format=3 uid="uid://bc400raps7bsp"]
+[gd_scene load_steps=29 format=3 uid="uid://bc400raps7bsp"]
 
 [ext_resource type="Script" path="res://Player.gd" id="1_3ypwe"]
 [ext_resource type="Script" path="res://car.gd" id="2_vdpya"]
+[ext_resource type="ArrayMesh" uid="uid://dmxwehlicdmtr" path="res://Gas Station/Station.obj" id="3_c1a73"]
+[ext_resource type="ArrayMesh" uid="uid://hhw26k2imijt" path="res://Gas Station/Storepillars.obj" id="4_lk383"]
+[ext_resource type="ArrayMesh" uid="uid://cmnqiba3bcsxn" path="res://Gas Station/Road.obj" id="5_2378y"]
+[ext_resource type="ArrayMesh" uid="uid://cwprfqyxgf6cq" path="res://Gas Station/Icebox.obj" id="6_3xwgj"]
+[ext_resource type="ArrayMesh" uid="uid://cr6xid2pqcmtk" path="res://Gas Station/Cup1.obj" id="7_62nq7"]
+[ext_resource type="ArrayMesh" uid="uid://b0cfq3on71jnb" path="res://Gas Station/cup2.obj" id="8_n641b"]
+[ext_resource type="ArrayMesh" uid="uid://bvrter6be7m2d" path="res://Gas Station/Lamps.obj" id="9_1u1ru"]
+[ext_resource type="ArrayMesh" uid="uid://0g7vr70sfe00" path="res://Gas Station/Close Grass.obj" id="10_05x4m"]
+[ext_resource type="ArrayMesh" uid="uid://bcammvyb0wdwv" path="res://Gas Station/Pillar1.obj" id="11_lalyq"]
+[ext_resource type="ArrayMesh" uid="uid://ch2bt87gxlom1" path="res://Gas Station/Pillar2.obj" id="12_iw58g"]
+[ext_resource type="ArrayMesh" uid="uid://dy2q6jfnekhmo" path="res://Gas Station/Pillar4.obj" id="13_1h27r"]
+[ext_resource type="ArrayMesh" uid="uid://c1ax243o4fp4y" path="res://Gas Station/Pillarstone2.obj" id="14_gi1gq"]
+[ext_resource type="ArrayMesh" uid="uid://pq0pkjydwinx" path="res://Gas Station/Pillarstone4.obj" id="15_lc7j0"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_nu3ek"]
-sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
-ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+sky_top_color = Color(0.286275, 0.317647, 0.501961, 1)
+sky_horizon_color = Color(0.560784, 0.411765, 0.243137, 1)
+ground_bottom_color = Color(0.0980392, 0.117647, 0.172549, 1)
+ground_horizon_color = Color(0.152941, 0.160784, 0.164706, 1)
+sun_angle_max = 52.5
 
 [sub_resource type="Sky" id="Sky_ia5sp"]
 sky_material = SubResource("ProceduralSkyMaterial_nu3ek")
@@ -15,6 +31,8 @@ background_mode = 2
 sky = SubResource("Sky_ia5sp")
 tonemap_mode = 2
 glow_enabled = true
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.0128
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_nlvcn"]
 size = Vector2(5, 5)
@@ -45,13 +63,17 @@ radial_segments = 12
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_og5c7"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5e666"]
+albedo_color = Color(0, 0.105882, 0, 1)
+
 [node name="Node3D" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_0d32n")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
+transform = Transform3D(-0.600845, 0.0477277, -0.79794, 0.00256011, 0.998326, 0.0577857, 0.799362, 0.0326775, -0.599961, 0, 0, 0)
+light_color = Color(1, 0.803922, 0.752941, 1)
 shadow_enabled = true
 
 [node name="floor" type="MeshInstance3D" parent="."]
@@ -148,5 +170,66 @@ shape = SubResource("BoxShape3D_og5c7")
 
 [node name="camera_car" type="Camera3D" parent="car"]
 transform = Transform3D(-1, -4.37114e-08, 7.57103e-08, 0, 0.866025, 0.5, -8.74228e-08, 0.5, -0.866025, 3.94557, 5.15014, -2.56856)
+
+[node name="Station" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.14042, 0, 0.882389, 0, 0.893492, 0, -0.882389, 0, 0.14042, 1.41703, 0.0582445, 1.9044)
+mesh = ExtResource("3_c1a73")
+
+[node name="Storepillars" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.139772, 0, 0.882491, 0, 0.893492, 0, -0.882491, 0, 0.139772, 1.4174, 0.0552989, 1.90459)
+mesh = ExtResource("4_lk383")
+
+[node name="Road" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.139772, 0, 0.882491, 0, 0.893492, 0, -0.882491, 0, 0.139772, 1.4174, 0.0552989, 1.90459)
+mesh = ExtResource("5_2378y")
+
+[node name="Icebox" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.197708, 0, 0.871343, 0, 0.893492, 0, -0.871343, 0, 0.197708, 0.95916, 0.00276839, 2.26956)
+mesh = ExtResource("6_3xwgj")
+
+[node name="Cup1" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.892623, 0, -0.0393942, -0.0016476, 0.89271, -0.0373325, 0.0393597, 0.0373688, 0.891841, -2.6628, 0.0280065, 3.23623)
+mesh = ExtResource("7_62nq7")
+
+[node name="Cup2" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.679072, 0, -0.580679, 0, 0.893492, 0, 0.580679, 0, 0.679072, -3.88261, 0.00276807, 0.2515)
+mesh = ExtResource("8_n641b")
+
+[node name="Lamps" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.139772, 0, 0.882491, 0, 0.893492, 0, -0.882491, 0, 0.139772, 1.4174, 0.00276817, 1.90459)
+mesh = ExtResource("9_1u1ru")
+
+[node name="CloseGrass" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.139772, 0, 0.882491, 0, 0.893492, 0, -0.882491, 0, 0.139772, 1.4174, 0.00276817, 1.90102)
+mesh = ExtResource("10_05x4m")
+surface_material_override/0 = SubResource("StandardMaterial3D_5e666")
+
+[node name="Pillar1" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.139696, 0, 0.882006, 0, 0.893, 0, -0.882006, 0, 0.139696, 1.417, 0.058, 1.9)
+mesh = ExtResource("11_lalyq")
+
+[node name="Pillar2" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.139696, 0, 0.882006, 0, 0.893, 0, -0.882006, 0, 0.139696, 1.417, 0.058, 1.9)
+mesh = ExtResource("12_iw58g")
+
+[node name="Pillar4" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.139696, 0, 0.882006, 0, 0.893, 0, -0.882006, 0, 0.139696, 1.417, 0.058, 1.9)
+mesh = ExtResource("13_1h27r")
+
+[node name="Pillarstone1" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.139696, 0, 0.882006, 0, 0.893, 0, -0.882006, 0, 0.139696, 0.578911, 0.058, -4.00855)
+mesh = ExtResource("14_gi1gq")
+
+[node name="Pillarstone2" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.139696, 0, 0.882006, 0, 0.893, 0, -0.882006, 0, 0.139696, 1.417, 0.058, 1.9)
+mesh = ExtResource("14_gi1gq")
+
+[node name="Pillarstone4" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.139696, 0, 0.882006, 0, 0.893, 0, -0.882006, 0, 0.139696, 1.417, 0.058, 1.9)
+mesh = ExtResource("15_lc7j0")
+
+[node name="Cup3" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.0809122, 0, -0.996721, 0, 1, 0, 0.996721, 0, 0.0809122, -10.8149, 0, -0.599141)
+mesh = ExtResource("7_62nq7")
 
 [connection signal="body_entered" from="car/player_detect" to="car" method="_on_player_detect_body_entered"]
