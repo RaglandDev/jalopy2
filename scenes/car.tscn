@@ -1,0 +1,159 @@
+[gd_scene load_steps=3 format=3 uid="uid://dlm4pompgj3tm"]
+
+[ext_resource type="PackedScene" uid="uid://h1ko5rlooex2" path="res://assets/models/Buick Reatta.glb" id="1_pwsgr"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_re2bb"]
+transparency = 1
+blend_mode = 1
+albedo_color = Color(0.815686, 0.886275, 1, 1)
+roughness = 0.2
+
+[node name="Buick Reatta" instance=ExtResource("1_pwsgr")]
+
+[node name="Skeleton3D" parent="Car" index="0"]
+bones/0/rotation = Quaternion(0.714086, 1.0398e-22, -1.58559e-16, 0.700058)
+bones/1/rotation = Quaternion(0.873222, -0.0148835, -0.487061, 0.00585082)
+bones/1/scale = Vector3(1, 1, 1)
+bones/2/rotation = Quaternion(0.484393, -0.157865, -0.510521, 0.692684)
+bones/2/scale = Vector3(1, 1, 1)
+bones/3/rotation = Quaternion(-0.101473, 0.475396, -0.187889, 0.853463)
+bones/3/scale = Vector3(1, 1, 1)
+bones/4/rotation = Quaternion(0.615484, 0.337384, -0.351599, 0.61946)
+bones/4/scale = Vector3(1, 1, 1)
+bones/5/rotation = Quaternion(0.615484, 0.337384, -0.351599, 0.61946)
+bones/5/scale = Vector3(1, 1, 1)
+bones/6/rotation = Quaternion(0.873222, 0.0148835, 0.487061, 0.00585082)
+bones/6/scale = Vector3(1, 1, 1)
+bones/7/rotation = Quaternion(0.484393, 0.157865, 0.510521, 0.692684)
+bones/7/scale = Vector3(1, 1, 1)
+bones/8/rotation = Quaternion(-0.101473, -0.475396, 0.187889, 0.853463)
+bones/9/rotation = Quaternion(0.615484, -0.337384, 0.351599, 0.61946)
+bones/9/scale = Vector3(1, 1, 1)
+bones/10/rotation = Quaternion(0.615484, -0.337384, 0.351599, 0.61946)
+bones/10/scale = Vector3(1, 1, 1)
+bones/11/rotation = Quaternion(0.0627649, -1.18974e-07, -7.48216e-09, 0.998028)
+bones/12/rotation = Quaternion(-0.756618, 7.79459e-08, 9.01958e-08, 0.653858)
+bones/13/rotation = Quaternion(0.170592, -0.0140073, -0.0140073, 0.985143)
+bones/14/rotation = Quaternion(-0.822901, -0.000196514, 0.0198083, 0.567839)
+bones/14/scale = Vector3(1, 1, 1)
+bones/15/rotation = Quaternion(-0.822901, -0.000196514, 0.0198083, 0.567839)
+bones/15/scale = Vector3(1, 1, 1)
+bones/16/rotation = Quaternion(0.170592, 0.0140073, 0.0140073, 0.985143)
+bones/17/rotation = Quaternion(-0.822901, 0.000196514, -0.0198083, 0.567839)
+bones/17/scale = Vector3(1, 1, 1)
+bones/18/rotation = Quaternion(-0.822901, 0.000196514, -0.0198083, 0.567839)
+bones/18/scale = Vector3(1, 1, 1)
+bones/19/rotation = Quaternion(0.992889, -2.83825e-08, -2.36723e-07, 0.119045)
+bones/20/rotation = Quaternion(0.780088, 1.49171e-07, -1.85988e-07, 0.62567)
+bones/20/scale = Vector3(1, 1, 1)
+bones/21/rotation = Quaternion(0.0669139, -0.0416305, -0.731481, 0.677292)
+bones/22/rotation = Quaternion(0.507178, 0.507179, -0.492717, -0.492717)
+bones/23/rotation = Quaternion(-0.0777504, 0.084538, 0.702751, 0.702103)
+bones/23/scale = Vector3(1, 1, 1)
+bones/24/rotation = Quaternion(-0.323651, 0.539381, -0.399979, 0.666584)
+bones/24/scale = Vector3(1, 1, 1)
+bones/25/rotation = Quaternion(-0.714086, -1.60696e-22, 1.58559e-16, 0.700058)
+bones/26/rotation = Quaternion(-0.714086, -1.60696e-22, 1.58559e-16, 0.700058)
+bones/27/rotation = Quaternion(-0.714086, -1.60696e-22, 1.58559e-16, 0.700058)
+bones/28/rotation = Quaternion(-0.714086, -1.70149e-22, 1.58559e-16, 0.700058)
+bones/29/rotation = Quaternion(-0.714086, -1.70149e-22, 1.58559e-16, 0.700058)
+bones/30/rotation = Quaternion(-0.702042, -0.0259988, -0.0817507, 0.70695)
+bones/30/scale = Vector3(1, 1, 1)
+bones/31/rotation = Quaternion(-0.714086, -1.60696e-22, 1.58559e-16, 0.700058)
+bones/32/rotation = Quaternion(-0.714086, -1.60696e-22, 1.58559e-16, 0.700058)
+bones/33/rotation = Quaternion(-0.714086, -1.41791e-22, 1.58559e-16, 0.700058)
+bones/34/rotation = Quaternion(-0.714086, -1.60696e-22, 1.58559e-16, 0.700058)
+
+[node name="Large Window" parent="Car/Skeleton3D" index="0"]
+transform = Transform3D(1, -2.68221e-07, -1.19209e-07, -2.98023e-08, 1, -5.36442e-07, 2.68221e-07, 6.55651e-07, 1, 5.96046e-08, -2.23517e-07, 0.453164)
+
+[node name="Large Window" parent="Car/Skeleton3D/Large Window" index="0"]
+transform = Transform3D(1, -2.66452e-15, 0, -8.88226e-16, 1, 0, 0, 0, 1, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_re2bb")
+
+[node name="Door" parent="Car/Skeleton3D" index="1"]
+transform = Transform3D(1, 8.9407e-08, -6.79865e-08, -2.98023e-07, 1, -2.3935e-07, 1.22003e-07, 2.39816e-07, 1, -1.78814e-07, 2.22586e-07, 0.453164)
+
+[node name="Small Window" parent="Car/Skeleton3D" index="2"]
+transform = Transform3D(1, 1.19209e-07, -6.79865e-08, -2.98023e-07, 1, -2.3935e-07, 1.22003e-07, 2.38884e-07, 1, -0.00691134, -0.00363468, 0.452496)
+
+[node name="Small Window" parent="Car/Skeleton3D/Small Window" index="0"]
+transform = Transform3D(1, 0, 0, 1.17267e-14, 1, -7.10543e-15, 0, 0, 1, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_re2bb")
+
+[node name="Large Window_001" parent="Car/Skeleton3D" index="3"]
+transform = Transform3D(1, 2.68221e-07, 1.19209e-07, 2.98023e-08, 1, -5.36442e-07, -2.68221e-07, 6.55651e-07, 1, -2.98023e-08, -2.08616e-07, 0.453164)
+
+[node name="Large Window_001" parent="Car/Skeleton3D/Large Window_001" index="0"]
+transform = Transform3D(1, 2.66452e-15, 0, 3.72694e-20, 1, 0, 0, 0, 1, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_re2bb")
+
+[node name="Door_001" parent="Car/Skeleton3D" index="4"]
+transform = Transform3D(1, -1.78814e-07, -2.8871e-08, 3.8743e-07, 1, -1.94646e-07, -6.14673e-08, 2.37487e-07, 1, 1.19209e-07, 2.82191e-07, 0.453164)
+
+[node name="Small Window_001" parent="Car/Skeleton3D" index="5"]
+transform = Transform3D(1, -1.78814e-07, -2.8871e-08, 3.8743e-07, 1, -1.94646e-07, -6.14673e-08, 2.37487e-07, 1, 0.00636518, -0.00363472, 0.452496)
+
+[node name="Small Window_001" parent="Car/Skeleton3D/Small Window_001" index="0"]
+transform = Transform3D(1, -1.34441e-16, 0, -2.80896e-15, 1, 0, 0, 0, 1, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_re2bb")
+
+[node name="Hood_2" parent="Car/Skeleton3D" index="6"]
+transform = Transform3D(1, 1.42109e-14, 1.06581e-14, -7.10543e-14, 1, 1.78814e-07, 0, -1.78814e-07, 1, -3.23884e-15, -7.45058e-08, 0.453164)
+
+[node name="Car_002" parent="Car/Skeleton3D" index="7"]
+transform = Transform3D(1, 7.82311e-08, 2.8871e-08, -7.82311e-08, 1, -2.38419e-07, -3.63216e-08, 3.27826e-07, 1, 0, 2.04891e-07, 0.453164)
+
+[node name="Car_004" parent="Car/Skeleton3D" index="8"]
+transform = Transform3D(1, 7.82311e-08, 2.8871e-08, -7.82311e-08, 1, -2.38419e-07, -3.63216e-08, 3.27826e-07, 1, 0.000127286, 0.00308987, 0.451386)
+
+[node name="Car_003" parent="Car/Skeleton3D" index="9"]
+transform = Transform3D(1, -7.82311e-08, -2.8871e-08, 7.82311e-08, 1, -2.38419e-07, 3.63216e-08, 3.27826e-07, 1, 0, 2.04891e-07, 0.453164)
+
+[node name="Car_005" parent="Car/Skeleton3D" index="10"]
+transform = Transform3D(1, -7.82311e-08, -2.8871e-08, 7.82311e-08, 1, -2.38419e-07, 3.63216e-08, 3.27826e-07, 1, 0.000127405, 0.00308987, 0.451386)
+
+[node name="Headlights_002" parent="Car/Skeleton3D" index="11"]
+transform = Transform3D(1, 1.98952e-12, -1.15818e-12, 5.68434e-14, 0.999999, 6.10948e-07, 6.60805e-13, 3.27826e-07, 1, -4.26012e-13, 2.5332e-07, 0.453164)
+
+[node name="Cube_004" parent="Car/Skeleton3D" index="12"]
+transform = Transform3D(0.985282, 0.152092, 0.0780254, -0.149946, 0.988154, -0.0326965, -0.082074, 0.0205158, 0.996415, 0.362164, 0.0123624, 0.691779)
+
+[node name="Cube_005" parent="Car/Skeleton3D" index="13"]
+transform = Transform3D(0.877804, -0.47902, -5.51809e-08, 0.47902, 0.877804, -2.98023e-08, 5.21541e-08, -4.47035e-08, 1, 0.215125, 0.01971, 0.692682)
+
+[node name="Car_001" parent="Car/Skeleton3D" index="14"]
+transform = Transform3D(1, 5.29396e-23, -8.64404e-23, -1.05879e-22, 1, 0, 1.10015e-22, 0, 1, 4.54949e-24, -8.3819e-08, 0.453164)
+
+[node name="Car_001" parent="Car/Skeleton3D/Car_001" index="0"]
+material_override = SubResource("StandardMaterial3D_re2bb")
+
+[node name="Car_006" parent="Car/Skeleton3D" index="15"]
+transform = Transform3D(1, 5.29396e-23, -8.64404e-23, -1.05879e-22, 1, 0, 1.10015e-22, 0, 1, 4.54949e-24, -8.3819e-08, 0.453164)
+
+[node name="Cube" parent="Car/Skeleton3D" index="16"]
+transform = Transform3D(1, 5.29396e-23, -8.64404e-23, -1.05879e-22, 1, 0, 1.10015e-22, 0, 1, 2.96751e-23, -0.0158011, 0.453164)
+
+[node name="Cube_001" parent="Car/Skeleton3D" index="17"]
+transform = Transform3D(0.0327482, 1.65436e-24, -3.45089e-24, -2.48154e-24, 0.0327482, 0, 3.94203e-24, 0, 0.0327482, 0.235974, 0.013688, 0.722618)
+
+[node name="Cube_002" parent="Car/Skeleton3D" index="18"]
+transform = Transform3D(0.0327482, 1.65436e-24, -3.45089e-24, -2.48154e-24, 0.0327482, 0, 3.94203e-24, 0, 0.0327482, 0.235974, 0.0140663, 0.721706)
+
+[node name="Cube_003" parent="Car/Skeleton3D" index="19"]
+transform = Transform3D(0.985282, 0.152092, 0.0780252, -0.149946, 0.988153, -0.0326967, -0.0820737, 0.020516, 0.996415, 0.285006, 0.0241047, 0.698206)
+
+[node name="Headlights_001" parent="Car/Skeleton3D" index="20"]
+transform = Transform3D(1, 5.29396e-23, -8.64404e-23, -1.05879e-22, 1, 0, 1.10015e-22, 0, 1, 4.54949e-24, -8.3819e-08, 0.453164)
+
+[node name="Headlights_003" parent="Car/Skeleton3D" index="21"]
+transform = Transform3D(1, 5.29396e-23, -8.64404e-23, -1.05879e-22, 1, 0, 1.10015e-22, 0, 1, 4.54949e-24, -8.3819e-08, 0.453164)
+
+[node name="Seat" parent="Car/Skeleton3D" index="22"]
+transform = Transform3D(0.10244, 1.65436e-24, -9.51258e-24, -4.96308e-24, 0.10244, 0, 8.582e-24, 0, 0.10244, 0.235974, -0.229842, 0.303379)
+
+[node name="Windshield" parent="Car/Skeleton3D" index="23"]
+transform = Transform3D(1, 5.29396e-23, -8.64404e-23, -1.05879e-22, 1, 0, 1.10015e-22, 0, 1, 4.54949e-24, -8.3819e-08, 0.453164)
+
+[node name="Windshield" parent="Car/Skeleton3D/Windshield" index="0"]
+material_override = SubResource("StandardMaterial3D_re2bb")
