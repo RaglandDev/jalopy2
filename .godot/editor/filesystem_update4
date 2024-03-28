@@ -1,5 +1,3 @@
 res://scenes/garage.tscn
 res://scripts/car.gd
-res://scenes/main_menu.tscn
-res://scenes/Car.tscn
-res://MainMenu.gd
+res://scripts/Player.gd

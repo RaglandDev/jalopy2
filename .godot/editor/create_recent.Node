@@ -1,3 +1,5 @@
+Node3D
+Area3D
 AudioStreamPlayer
 Button
 CenterContainer
@@ -7,8 +9,6 @@ TextureRect
 MarginContainer
 Camera3D
 CollisionShape3D
-Area3D
 MeshInstance3D
 VehicleWheel3D
 VehicleBody3D
-StaticBody3D
