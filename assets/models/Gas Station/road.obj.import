@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cmnqiba3bcsxn"
+path="res://.godot/imported/road.obj-3efbc157cb29f192f6c5d8c968f35044.mesh"
+
+[deps]
+
+files=["res://.godot/imported/road.obj-3efbc157cb29f192f6c5d8c968f35044.mesh"]
+
+source_file="res://assets/models/Gas Station/road.obj"
+dest_files=["res://.godot/imported/road.obj-3efbc157cb29f192f6c5d8c968f35044.mesh", "res://.godot/imported/road.obj-3efbc157cb29f192f6c5d8c968f35044.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
