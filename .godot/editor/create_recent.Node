@@ -1,3 +1,4 @@
+TextureRect
 RichTextLabel
 Camera3D
 Control
@@ -12,4 +13,3 @@ AudioStreamPlayer
 CenterContainer
 VBoxContainer
 HBoxContainer
-TextureRect
