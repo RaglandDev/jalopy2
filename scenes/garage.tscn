@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://bc400raps7bsp"]
+[gd_scene load_steps=37 format=3 uid="uid://bc400raps7bsp"]
 
 [ext_resource type="Script" path="res://scripts/Player.gd" id="1_3ypwe"]
 [ext_resource type="Script" path="res://scripts/car.gd" id="2_vdpya"]
@@ -10,6 +10,7 @@
 [ext_resource type="ArrayMesh" uid="uid://b0cfq3on71jnb" path="res://assets/models/Gas Station/cup2.obj" id="8_n641b"]
 [ext_resource type="ArrayMesh" uid="uid://bvrter6be7m2d" path="res://assets/models/Gas Station/Lamps.obj" id="9_1u1ru"]
 [ext_resource type="ArrayMesh" uid="uid://0g7vr70sfe00" path="res://assets/models/Gas Station/Close Grass.obj" id="10_05x4m"]
+[ext_resource type="Script" path="res://scenes/Overlay.gd" id="10_68261"]
 [ext_resource type="ArrayMesh" uid="uid://bcammvyb0wdwv" path="res://assets/models/Gas Station/Pillar1.obj" id="11_lalyq"]
 [ext_resource type="ArrayMesh" uid="uid://ch2bt87gxlom1" path="res://assets/models/Gas Station/Pillar2.obj" id="12_iw58g"]
 [ext_resource type="ArrayMesh" uid="uid://dy2q6jfnekhmo" path="res://assets/models/Gas Station/Pillar4.obj" id="13_1h27r"]
@@ -199,6 +200,78 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.82834, 0)
 [node name="camera_player" type="Camera3D" parent="player/Neck"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.214159, 0)
 
+[node name="Overlay" type="SubViewportContainer" parent="player/Neck/camera_player"]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -25.0
+offset_right = 100.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("10_68261")
+
+[node name="SubViewport" type="SubViewport" parent="player/Neck/camera_player/Overlay"]
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(200, 50)
+render_target_update_mode = 0
+
+[node name="QuitButton" type="Button" parent="player/Neck/camera_player/Overlay/SubViewport"]
+custom_minimum_size = Vector2(200, 50)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -25.0
+offset_right = 100.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Quit"
+
+[node name="Continue" type="SubViewportContainer" parent="player/Neck/camera_player"]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -89.0
+offset_right = 100.0
+offset_bottom = -39.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("10_68261")
+
+[node name="SubViewport" type="SubViewport" parent="player/Neck/camera_player/Continue"]
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(200, 50)
+render_target_update_mode = 0
+
+[node name="ContinueButton" type="Button" parent="player/Neck/camera_player/Continue/SubViewport"]
+custom_minimum_size = Vector2(200, 50)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -25.0
+offset_right = 100.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Continue"
+
 [node name="car" type="VehicleBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.50519, 0.0814071, 1.51033)
 script = ExtResource("2_vdpya")
@@ -279,54 +352,46 @@ transform = Transform3D(1, 8.88178e-16, -7.10543e-15, 0, 1, 0, 7.10543e-15, 0, 1
 transform = Transform3D(2.66, 0, 0, 0, 2.66, 0, 0, 0, 2.66, -1.40938, 1.3486, -0.0611677)
 
 [node name="Skeleton3D" parent="car/Buick Reatta/Car" index="0"]
-bones/1/rotation = Quaternion(0.873222, -0.0148835, -0.487061, 0.00585082)
-bones/2/scale = Vector3(1, 1, 1)
-bones/6/rotation = Quaternion(0.873222, 0.0148835, 0.487061, 0.00585082)
-bones/7/scale = Vector3(1, 1, 1)
-bones/11/rotation = Quaternion(0.0627649, -1.18974e-07, -7.48216e-09, 0.998028)
-bones/13/rotation = Quaternion(0.170592, -0.0140073, -0.0140073, 0.985143)
-bones/16/rotation = Quaternion(0.170592, 0.0140073, 0.0140073, 0.985143)
-bones/19/rotation = Quaternion(0.992889, -2.83825e-08, -2.36723e-07, 0.119045)
 bones/21/rotation = Quaternion(0.066914, -0.0416305, -0.731481, 0.677292)
 
 [node name="Large Window" parent="car/Buick Reatta/Car/Skeleton3D" index="0"]
-transform = Transform3D(1, -5.66244e-07, -1.3411e-06, 5.66244e-07, 1, 6.85453e-07, 1.43051e-06, -6.10948e-07, 1, -1.19209e-07, 1.93715e-07, 0.453163)
+transform = Transform3D(1, -7.15256e-07, -1.37091e-06, 8.64267e-07, 1, 6.4075e-07, 1.40071e-06, -6.25849e-07, 1, -1.19209e-07, 4.47035e-08, 0.453164)
 
 [node name="Door" parent="car/Buick Reatta/Car/Skeleton3D" index="1"]
-transform = Transform3D(1, -2.08616e-07, -3.58559e-07, 2.38419e-07, 1, 3.69269e-07, 3.22238e-07, -3.52971e-07, 1, -1.19209e-07, 6.58445e-07, 0.453164)
+transform = Transform3D(1, -4.17233e-07, -3.66941e-07, 5.36442e-07, 1, 3.62284e-07, 3.29688e-07, -3.48315e-07, 1, -1.19209e-07, 5.39236e-07, 0.453164)
 
 [node name="Small Window" parent="car/Buick Reatta/Car/Skeleton3D" index="2"]
-transform = Transform3D(1, -2.08616e-07, -3.58559e-07, 2.38419e-07, 1, 3.69269e-07, 3.22238e-07, -3.52971e-07, 1, -0.00691128, -0.00363426, 0.452496)
+transform = Transform3D(1, -4.17233e-07, -3.66941e-07, 5.36442e-07, 1, 3.62284e-07, 3.29688e-07, -3.48315e-07, 1, -0.00691128, -0.00363439, 0.452496)
 
 [node name="Large Window_001" parent="car/Buick Reatta/Car/Skeleton3D" index="3"]
-transform = Transform3D(1, 5.66244e-07, 1.3411e-06, -5.96046e-07, 1, 6.85453e-07, -1.40071e-06, -6.10948e-07, 1, 1.19209e-07, 2.08616e-07, 0.453163)
+transform = Transform3D(1, 7.15256e-07, 1.37091e-06, -8.9407e-07, 1, 6.4075e-07, -1.40071e-06, -6.25849e-07, 1, 1.19209e-07, 5.21541e-08, 0.453164)
 
 [node name="Door_001" parent="car/Buick Reatta/Car/Skeleton3D" index="4"]
-transform = Transform3D(1, 2.08616e-07, 3.58559e-07, -2.38419e-07, 1, 3.69269e-07, -3.22238e-07, -3.52971e-07, 1, 1.19209e-07, 7.1805e-07, 0.453164)
+transform = Transform3D(1, 4.17233e-07, 3.66941e-07, -5.36442e-07, 1, 3.62284e-07, -3.29688e-07, -3.48315e-07, 1, 1.19209e-07, 5.9884e-07, 0.453164)
 
 [node name="Small Window_001" parent="car/Buick Reatta/Car/Skeleton3D" index="5"]
-transform = Transform3D(1, 2.08616e-07, 3.58559e-07, -2.38419e-07, 1, 3.69269e-07, -3.22238e-07, -3.52971e-07, 1, 0.00636518, -0.00363429, 0.452496)
+transform = Transform3D(1, 4.17233e-07, 3.66941e-07, -5.36442e-07, 1, 3.62284e-07, -3.29688e-07, -3.48315e-07, 1, 0.00636518, -0.00363442, 0.452496)
 
 [node name="Hood_2" parent="car/Buick Reatta/Car/Skeleton3D" index="6"]
-transform = Transform3D(1, 1.7053e-13, 5.32907e-14, -2.41585e-13, 1, 1.2517e-06, -9.23706e-14, -1.2517e-06, 1, -6.79156e-15, 4.17233e-07, 0.453164)
+transform = Transform3D(1, -2.41585e-13, 1.77636e-14, 1.7053e-13, 1, 1.2815e-06, -6.03961e-14, -1.2815e-06, 1, 4.29464e-14, 4.02331e-07, 0.453164)
 
 [node name="Car_002" parent="car/Buick Reatta/Car/Skeleton3D" index="7"]
-transform = Transform3D(1, 1.24797e-07, 9.40636e-08, -1.37836e-07, 1, 5.66244e-07, -9.96515e-08, -4.76837e-07, 1, 0, 6.50063e-07, 0.453164)
+transform = Transform3D(1, 4.09782e-08, 3.63216e-08, -4.84288e-08, 1, 1.40071e-06, -4.19095e-08, -1.3113e-06, 1, 2.98023e-08, -1.546e-07, 0.453164)
 
 [node name="Car_004" parent="car/Buick Reatta/Car/Skeleton3D" index="8"]
-transform = Transform3D(1, 1.24797e-07, 9.40636e-08, -1.37836e-07, 1, 5.66244e-07, -9.96515e-08, -4.76837e-07, 1, 0.000127286, 0.00309032, 0.451386)
+transform = Transform3D(1, 4.09782e-08, 3.63216e-08, -4.84288e-08, 1, 1.40071e-06, -4.19095e-08, -1.3113e-06, 1, 0.000127316, 0.00308951, 0.451386)
 
 [node name="Car_003" parent="car/Buick Reatta/Car/Skeleton3D" index="9"]
-transform = Transform3D(1, -1.24797e-07, -9.40636e-08, 1.37836e-07, 1, 5.66244e-07, 9.96515e-08, -4.76837e-07, 1, 0, 6.50063e-07, 0.453164)
+transform = Transform3D(1, -4.09782e-08, -3.63216e-08, 4.84288e-08, 1, 1.40071e-06, 4.19095e-08, -1.3113e-06, 1, -2.98023e-08, -1.546e-07, 0.453164)
 
 [node name="Car_005" parent="car/Buick Reatta/Car/Skeleton3D" index="10"]
-transform = Transform3D(1, -1.24797e-07, -9.40636e-08, 1.37836e-07, 1, 5.66244e-07, 9.96515e-08, -4.76837e-07, 1, 0.000127405, 0.00309029, 0.451386)
+transform = Transform3D(1, -4.09782e-08, -3.63216e-08, 4.84288e-08, 1, 1.40071e-06, 4.19095e-08, -1.3113e-06, 1, 0.000127316, 0.00308948, 0.451386)
 
 [node name="Headlights_002" parent="car/Buick Reatta/Car/Skeleton3D" index="11"]
-transform = Transform3D(1, 2.18847e-12, -1.78346e-12, -1.7053e-13, 0.999998, 1.44541e-06, 1.35714e-12, -5.21541e-07, 1, -4.26012e-13, 7.15256e-07, 0.453164)
+transform = Transform3D(1, 1.53477e-12, -1.60583e-12, 5.68434e-13, 0.999998, 1.2368e-06, 1.1724e-12, -2.83122e-07, 1, -1.98638e-13, 5.81145e-07, 0.453164)
 
 [node name="Cube_004" parent="car/Buick Reatta/Car/Skeleton3D" index="12"]
-transform = Transform3D(0.985282, 0.152093, 0.0780253, -0.149947, 0.988154, -0.0326952, -0.0820737, 0.0205143, 0.996415, 0.362164, 0.0123632, 0.691779)
+transform = Transform3D(0.985282, 0.152093, 0.0780259, -0.149947, 0.988153, -0.0326954, -0.0820743, 0.0205143, 0.996415, 0.362164, 0.0123632, 0.691779)
 
 [node name="Cube_005" parent="car/Buick Reatta/Car/Skeleton3D" index="13"]
 transform = Transform3D(0.877804, -0.47902, 1.06613e-06, 0.47902, 0.877804, 1.2368e-06, -1.43796e-06, -6.10948e-07, 1, 0.215125, 0.0197108, 0.692682)
@@ -393,6 +458,8 @@ mesh = ExtResource("15_lc7j0")
 transform = Transform3D(0.0809122, 0, -0.996721, 0, 1, 0, 0.996721, 0, 0.0809122, -10.8149, 0, -0.599141)
 mesh = ExtResource("7_62nq7")
 
+[connection signal="pressed" from="player/Neck/camera_player/Overlay/SubViewport/QuitButton" to="player/Neck/camera_player/Overlay" method="_on_quit_button_pressed"]
+[connection signal="pressed" from="player/Neck/camera_player/Continue/SubViewport/ContinueButton" to="player/Neck/camera_player/Continue" method="_on_continue_button_pressed"]
 [connection signal="body_entered" from="car/player_detect" to="car" method="_on_player_detect_body_entered"]
 [connection signal="body_entered" from="car/player_detect_hood" to="car" method="_on_player_detect_hood_body_entered"]
 

@@ -1,3 +1,6 @@
 res://scenes/garage.tscn
 res://scripts/car.gd
 res://scripts/Player.gd
+res://scenes/main_menu.tscn
+res://scenes/pause_menu.tscn
+res://scenes/Overlay.gd

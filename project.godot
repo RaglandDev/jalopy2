@@ -15,6 +15,10 @@ run/main_scene="res://scenes/main_menu.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://assets/icon.svg"
 
+[display]
+
+window/subwindows/embed_subwindows=false
+
 [editor]
 
 version_control/plugin_name="GitPlugin"

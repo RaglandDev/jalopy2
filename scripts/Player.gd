@@ -8,14 +8,25 @@ const JUMP_VELOCITY = 4.5
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 @onready var neck := $Neck
 @onready var camera := $Neck/camera_player
+@onready var overlay := $Neck/camera_player/Overlay
+@onready var Continue = get_parent().find_child("Continue")
 var active = true
 
+func _ready():
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	
 func _unhandled_input(event):
 	if active:
 		if event is InputEventMouseButton:
 			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 		elif event.is_action_pressed("ui_cancel"):
-			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+			if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
+				Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+			else:
+				Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+				
+			overlay.set_visible(!overlay.visible)
+			Continue.set_visible(!Continue.visible)
 		if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
 			if event is InputEventMouseMotion:
 				neck.rotate_y(-event.relative.x * .01)
