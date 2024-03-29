@@ -426,6 +426,10 @@ transform = Transform3D(0.10244, 3.30872e-24, -9.46088e-24, -8.27181e-24, 0.1024
 [node name="Windshield" parent="car/Buick Reatta/Car/Skeleton3D" index="23"]
 transform = Transform3D(1, 5.29396e-23, -7.61006e-23, -7.94093e-23, 1, 0, 5.50075e-23, 0, 1, 1.50754e-22, 4.02331e-07, 0.453164)
 
+[node name="car_camera_top" type="Camera3D" parent="car"]
+transform = Transform3D(-1, -5.96222e-08, 6.3937e-08, 0, 0.731354, 0.681998, -8.74228e-08, 0.681998, -0.731354, -1.352, 4.657, -3.315)
+fov = 91.7
+
 [node name="Icebox" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.197708, 0, 0.871343, 0, 0.893492, 0, -0.871343, 0, 0.197708, 0.95916, 0.00276839, 2.26956)
 mesh = ExtResource("6_3xwgj")

@@ -1,3 +1,4 @@
+Camera3D
 Control
 Button
 SubViewport
@@ -12,4 +13,3 @@ VBoxContainer
 HBoxContainer
 TextureRect
 MarginContainer
-Camera3D
