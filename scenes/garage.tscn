@@ -430,6 +430,32 @@ transform = Transform3D(1, 5.29396e-23, -7.61006e-23, -7.94093e-23, 1, 0, 5.5007
 transform = Transform3D(-1, -5.96222e-08, 6.3937e-08, 0, 0.731354, 0.681998, -8.74228e-08, 0.681998, -0.731354, -1.352, 4.657, -3.315)
 fov = 91.7
 
+[node name="Controls" type="SubViewportContainer" parent="car/car_camera_top"]
+visible = false
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -100.0
+offset_top = -50.0
+offset_right = 100.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="SubViewport" type="SubViewport" parent="car/car_camera_top/Controls"]
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(200, 50)
+render_target_update_mode = 0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="car/car_camera_top/Controls/SubViewport"]
+custom_minimum_size = Vector2(200, 50)
+offset_right = 40.0
+offset_bottom = 40.0
+text = "V - Toggle top view"
+fit_content = true
+
 [node name="Icebox" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.197708, 0, 0.871343, 0, 0.893492, 0, -0.871343, 0, 0.197708, 0.95916, 0.00276839, 2.26956)
 mesh = ExtResource("6_3xwgj")

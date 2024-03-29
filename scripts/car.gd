@@ -12,6 +12,7 @@ var top_view = false
 @onready var neck := $Neck_Car
 @onready var camera := $Neck_Car/camera_car
 @onready var top_camera := $car_camera_top
+@onready var controls := $car_camera_top/Controls
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -28,6 +29,7 @@ func _unhandled_input(event):
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if active:
+		controls.set_visible(true)
 		if !top_view:
 			$Neck_Car/camera_car.make_current()
 		else:
@@ -78,6 +80,7 @@ func leaving_car():
 		active = false 
 		inside_car = false
 		hidden_player.global_transform.origin = newLoc
+		controls.set_visible(false)
 
 
 func _on_player_detect_hood_body_entered(body):

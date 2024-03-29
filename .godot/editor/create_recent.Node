@@ -1,3 +1,4 @@
+RichTextLabel
 Camera3D
 Control
 Button
@@ -12,4 +13,3 @@ CenterContainer
 VBoxContainer
 HBoxContainer
 TextureRect
-MarginContainer
