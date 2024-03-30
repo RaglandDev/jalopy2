@@ -66,7 +66,7 @@ func entering_car():
 		get_parent().find_child("AnimationPlayer").play("Door_L Open")
 		door_open = true
 	elif Input.is_action_just_pressed("ui_e") && car_zone && door_open:
-		get_parent().find_child("AnimationPlayer").play_backwards("Door_L Open")
+		get_parent().find_child("AnimationPlayer").play("Door_LClose")
 		var hidden_player = get_parent().get_node("player")
 		hidden_player.active = false
 		$Neck_Car/camera_car.make_current()
