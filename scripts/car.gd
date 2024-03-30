@@ -8,6 +8,8 @@ var hood_zone = false
 var door_open = false
 var inside_car = true
 var top_view = false
+var hood_open = false
+var lights_on = false
 
 @onready var neck := $Neck_Car
 @onready var camera := $Neck_Car/camera_car
@@ -29,6 +31,7 @@ func _unhandled_input(event):
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if active:
+		switch_lights()
 		controls.set_visible(true)
 		if !top_view:
 			$Neck_Car/camera_car.make_current()
@@ -49,6 +52,7 @@ func _process(delta):
 	elif !active:
 		entering_car()
 		opening_hood()
+
 
 
 func _on_player_detect_body_entered(body):
@@ -87,6 +91,18 @@ func _on_player_detect_hood_body_entered(body):
 	if body.name == "player":
 		hood_zone = true
 func opening_hood():
-	#if Input.is_action_just_pressed("ui_e") && hood_zone:
-		#get_parent().find_child("AnimationPlayer").play("Door_L Open")
+	if Input.is_action_just_pressed("ui_e") && hood_zone && !hood_open:
+		get_parent().find_child("AnimationPlayer").play("Hood Open")
+		hood_open = true
+	elif Input.is_action_just_pressed("ui_e") && hood_zone && hood_open:
+		get_parent().find_child("AnimationPlayer").play("Hood Close")
+		hood_open = false
 	pass
+
+func switch_lights():
+	if Input.is_action_just_pressed("ui_h") && car_zone && !lights_on:
+		get_parent().find_child("AnimationPlayer").play("Headlights On")
+		lights_on = true
+	elif Input.is_action_just_pressed("ui_h") && car_zone && lights_on:
+		get_parent().find_child("AnimationPlayer").play("Headlights Off")
+		lights_on = false

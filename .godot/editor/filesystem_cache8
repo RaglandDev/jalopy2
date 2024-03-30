@@ -1,40 +1,41 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1711674053
-MainMenu.gd::GDScript::-1::1711156000::0::1::::<>Control<>::
-README.md::TextFile::-1::1711156000::0::1::::<><>::
-::res://assets/::1711675815
-ai_menu.png::CompressedTexture2D::7984493058594780682::1711675821::1711675833::1::::<><>::
-graphic.png::CompressedTexture2D::4481527421759235694::1711156000::1711156000::1::::<><>::
-icon.svg::CompressedTexture2D::8415602555851118667::1711156000::1711156000::1::::<><>::
-new_game.png::CompressedTexture2D::936088710058785552::1711156000::1711156000::1::::<><>::
-title.png::CompressedTexture2D::8986220434652744770::1711156000::1711156000::1::::<><>::
-verison.png::CompressedTexture2D::8614288549283882704::1711156000::1711156000::1::::<><>::
-::res://assets/audio/::1711156000
-main_menu_theme.mp3::AudioStreamMP3::6105928915678757929::1711156000::1711156000::1::::<><>::
-::res://assets/materials/::1711156000
-::res://assets/models/::1711661361
-Buick Reatta.glb::PackedScene::545629500595347497::1711661343::1711661361::1::::<><>::
-::res://assets/models/Gas Station/::1711661360
-Close Grass.obj::Mesh::1769088746406533347::1711156000::1711156000::1::::<><>::
-Cup1.obj::Mesh::6031458396776249072::1711156000::1711156000::1::::<><>::
-cup2.obj::Mesh::4145604180733862735::1711156000::1711156000::1::::<><>::
-Icebox.obj::Mesh::6349003590082539064::1711156000::1711156000::1::::<><>::
-Lamps.obj::Mesh::3896642528786922345::1711156000::1711156000::1::::<><>::
-MainRoad.obj::Mesh::7127892082340100557::1711661343::1711661360::1::::<><>::
-Pillar1.obj::Mesh::2527549544554593901::1711156000::1711156000::1::::<><>::
-Pillar2.obj::Mesh::5319997902297095538::1711156000::1711156000::1::::<><>::
-Pillar4.obj::Mesh::8900559810277590322::1711156000::1711156000::1::::<><>::
-Pillarstone1.obj::Mesh::3985404277107714951::1711156000::1711156000::1::::<><>::
-Pillarstone2.obj::Mesh::6599197576350847334::1711156000::1711156000::1::::<><>::
-Pillarstone4.obj::Mesh::1087407950595251985::1711156000::1711156000::1::::<><>::
-road.obj::Mesh::5642930213877848963::1711661343::1711661360::1::::<><>::
-Station.obj::Mesh::8050352165118136511::1711156000::1711156000::1::::<><>::
-Storepillars.obj::Mesh::507158184930766501::1711156000::1711156000::1::::<><>::
-::res://scenes/::1711674129
-car.tscn::PackedScene::7957900198399668746::1711661343::0::1::::<><>::uid://h1ko5rlooex2::::res://assets/models/Buick Reatta.glb
-garage.tscn::PackedScene::2588228789107480695::1711674129::0::1::::<><>::res://scripts/Player.gd<>res://scripts/car.gd<>uid://dmxwehlicdmtr::::res://assets/models/Gas Station/Station.obj<>uid://dlm4pompgj3tm::::res://scenes/car.tscn<>uid://hhw26k2imijt::::res://assets/models/Gas Station/Storepillars.obj<>uid://cwprfqyxgf6cq::::res://assets/models/Gas Station/Icebox.obj<>uid://cr6xid2pqcmtk::::res://assets/models/Gas Station/Cup1.obj<>uid://b0cfq3on71jnb::::res://assets/models/Gas Station/cup2.obj<>uid://bvrter6be7m2d::::res://assets/models/Gas Station/Lamps.obj<>uid://0g7vr70sfe00::::res://assets/models/Gas Station/Close Grass.obj<>res://scenes/Overlay.gd<>uid://bcammvyb0wdwv::::res://assets/models/Gas Station/Pillar1.obj<>uid://ch2bt87gxlom1::::res://assets/models/Gas Station/Pillar2.obj<>uid://dy2q6jfnekhmo::::res://assets/models/Gas Station/Pillar4.obj<>uid://c1ax243o4fp4y::::res://assets/models/Gas Station/Pillarstone2.obj<>uid://pq0pkjydwinx::::res://assets/models/Gas Station/Pillarstone4.obj<>uid://cmnqiba3bcsxn::::res://assets/models/Gas Station/road.obj<>uid://c8s2luopjhgh6::::res://assets/models/Gas Station/MainRoad.obj
-main_menu.tscn::PackedScene::1817222837489534711::1711674067::0::1::::<><>::res://MainMenu.gd<>uid://cs8000jf7hg46::::res://assets/audio/main_menu_theme.mp3
-Overlay.gd::GDScript::-1::1711671388::0::1::::<>SubViewportContainer<>::
-::res://scripts/::1711673848
-car.gd::GDScript::-1::1711673848::0::1::::<>VehicleBody3D<>::
-Player.gd::GDScript::-1::1711671616::0::1::::<>CharacterBody3D<>::
+::res://::1711772958
+MainMenu.gd::GDScript::-1::1711772917::0::1::::<>Control<>::
+README.md::TextFile::-1::1711086823::0::1::::<><>::
+::res://assets/::1711772918
+ai_menu.png::CompressedTexture2D::7984493058594780682::1711772918::1711772918::1::::<><>::
+graphic.png::CompressedTexture2D::4481527421759235694::1711772918::1711772918::1::::<><>::
+icon.svg::CompressedTexture2D::8415602555851118667::1711772918::1711772918::1::::<><>::
+new_game.png::CompressedTexture2D::936088710058785552::1711772918::1711772918::1::::<><>::
+title.png::CompressedTexture2D::8986220434652744770::1711772918::1711772918::1::::<><>::
+verison.png::CompressedTexture2D::8614288549283882704::1711772918::1711772918::1::::<><>::
+::res://assets/audio/::1711772918
+main_menu_theme.mp3::AudioStreamMP3::6105928915678757929::1711772918::1711772918::1::::<><>::
+::res://assets/materials/::1711772918
+::res://assets/models/::1711772918
+Buick Reatta.glb::PackedScene::545629500595347497::1711772918::1711772918::1::::<><>::
+::res://assets/models/Gas Station/::1711772918
+Close Grass.obj::Mesh::1769088746406533347::1711772918::1711772918::1::::<><>::
+Cup1.obj::Mesh::6031458396776249072::1711772918::1711772918::1::::<><>::
+cup2.obj::Mesh::4145604180733862735::1711772918::1711772918::1::::<><>::
+Icebox.obj::Mesh::6349003590082539064::1711772918::1711772918::1::::<><>::
+Lamps.obj::Mesh::3896642528786922345::1711772918::1711772918::1::::<><>::
+MainRoad.obj::Mesh::7127892082340100557::1711772918::1711772959::1::::<><>::
+Mountains.obj::Mesh::1232639882184422693::1711772918::1711772960::1::::<><>::
+Pillar1.obj::Mesh::2527549544554593901::1711772918::1711772918::1::::<><>::
+Pillar2.obj::Mesh::5319997902297095538::1711772918::1711772918::1::::<><>::
+Pillar4.obj::Mesh::8900559810277590322::1711772918::1711772918::1::::<><>::
+Pillarstone1.obj::Mesh::3985404277107714951::1711772918::1711772918::1::::<><>::
+Pillarstone2.obj::Mesh::6599197576350847334::1711772918::1711772918::1::::<><>::
+Pillarstone4.obj::Mesh::1087407950595251985::1711772918::1711772918::1::::<><>::
+road.obj::Mesh::5642930213877848963::1711772918::1711772960::1::::<><>::
+Station.obj::Mesh::8050352165118136511::1711772918::1711772918::1::::<><>::
+Storepillars.obj::Mesh::507158184930766501::1711772918::1711772918::1::::<><>::
+::res://scenes/::1711772918
+car.tscn::PackedScene::7957900198399668746::1711772918::0::1::::<><>::uid://h1ko5rlooex2::::res://assets/models/Buick Reatta.glb
+garage.tscn::PackedScene::2588228789107480695::1711772918::0::1::::<><>::res://scripts/Player.gd<>res://scripts/car.gd<>uid://dmxwehlicdmtr::::res://assets/models/Gas Station/Station.obj<>uid://dlm4pompgj3tm::::res://scenes/car.tscn<>uid://hhw26k2imijt::::res://assets/models/Gas Station/Storepillars.obj<>uid://cwprfqyxgf6cq::::res://assets/models/Gas Station/Icebox.obj<>uid://cr6xid2pqcmtk::::res://assets/models/Gas Station/Cup1.obj<>uid://b0cfq3on71jnb::::res://assets/models/Gas Station/cup2.obj<>uid://bvrter6be7m2d::::res://assets/models/Gas Station/Lamps.obj<>res://scenes/Overlay.gd<>uid://bcammvyb0wdwv::::res://assets/models/Gas Station/Pillar1.obj<>uid://ch2bt87gxlom1::::res://assets/models/Gas Station/Pillar2.obj<>uid://dy2q6jfnekhmo::::res://assets/models/Gas Station/Pillar4.obj<>uid://c1ax243o4fp4y::::res://assets/models/Gas Station/Pillarstone2.obj<>uid://pq0pkjydwinx::::res://assets/models/Gas Station/Pillarstone4.obj<>uid://cmnqiba3bcsxn::::res://assets/models/Gas Station/road.obj<>uid://c8s2luopjhgh6::::res://assets/models/Gas Station/MainRoad.obj<>uid://rtdns8g5dd6d::::res://assets/models/Gas Station/Mountains.obj
+main_menu.tscn::PackedScene::1817222837489534711::1711772918::0::1::::<><>::uid://dl00o035h3bwk::::res://assets/ai_menu.png<>res://MainMenu.gd<>uid://cs8000jf7hg46::::res://assets/audio/main_menu_theme.mp3
+Overlay.gd::GDScript::-1::1711772918::0::1::::<>SubViewportContainer<>::
+::res://scripts/::1711772918
+car.gd::GDScript::-1::1711772918::0::1::::<>VehicleBody3D<>::
+Player.gd::GDScript::-1::1711772918::0::1::::<>CharacterBody3D<>::
