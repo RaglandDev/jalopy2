@@ -1,6 +1,6 @@
 # Blender 4.1.0
 # www.blender.org
-mtllib Road.mtl
+mtllib road.mtl
 o Road-col
 v -12.404097 0.000000 0.118400
 v 7.895020 0.000000 -1.720243
