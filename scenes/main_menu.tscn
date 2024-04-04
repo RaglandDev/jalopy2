@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dl00o035h3bwk" path="res://assets/ai_menu.png" id="1_uspoo"]
 [ext_resource type="Script" path="res://MainMenu.gd" id="1_v6bgv"]
-[ext_resource type="AudioStream" uid="uid://cs8000jf7hg46" path="res://assets/audio/main_menu_theme.mp3" id="2_nwdge"]
+[ext_resource type="AudioStream" uid="uid://cs8000jf7hg46" path="res://assets/Jolopy 2 OST/main_menu_theme.mp3" id="2_nwdge"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3

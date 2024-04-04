@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ib3ivil0sdgo"
+path="res://.godot/imported/Jolopy OST_ Track 1.mp3-64f681bd710f0c69299f043c49923dd7.mp3str"
+
+[deps]
+
+source_file="res://assets/Jolopy 2 OST/Jolopy OST_ Track 1.mp3"
+dest_files=["res://.godot/imported/Jolopy OST_ Track 1.mp3-64f681bd710f0c69299f043c49923dd7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
